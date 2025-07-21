@@ -37,14 +37,6 @@
       font-size: 1.1em;
       color: #ccc;
     }
-    .link {
-      display: inline-block;
-      margin-top: 15px;
-      color: #00f2ff;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
     .sobre {
       max-width: 700px;
       margin: 30px auto;
@@ -61,6 +53,27 @@
     }
     ul li {
       margin-bottom: 10px;
+    }
+
+    .buttons {
+      margin: 40px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #1f1f1f;
+      color: #00f2ff;
+      border: 2px solid #00f2ff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00f2ff;
+      color: #000;
+      transform: scale(1.05);
     }
   </style>
 </head>
@@ -83,12 +96,6 @@
     <p class="info" style="font-style: italic; margin-top: 20px;">
       “Apenas um jovem apaixonado por tecnologia que está criando seu futuro com código.”
     </p>
-
-    <!-- LINKS -->
-    <div>
-      <a href="https://github.com/vitor-weny" target="_blank" class="link">🌐 Meu GitHub</a><br>
-      <a href="https://discord.gg/enWarCS3uA" target="_blank" class="link">💬 Nosso Discord</a>
-    </div>
   </header>
 
   <!-- SOBRE MIM -->
@@ -108,6 +115,12 @@
       <li>✅ 5 - Sou profissional na área de afiliados.</li>
     </ul>
   </section>
+
+  <!-- BOTÕES FINAIS -->
+  <div class="buttons">
+    <a href="https://github.com/vitor-weny" target="_blank" class="btn">🌐 GitHub</a>
+    <a href="https://discord.gg/enWarCS3uA" target="_blank" class="btn">💬 Discord</a>
+  </div>
 
 </body>
 </html>
