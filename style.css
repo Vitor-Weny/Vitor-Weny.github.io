@@ -1,76 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  background: linear-gradient(135deg, #1e1e2f, #2a2a3f);
+  margin: 0;
+  background-color: #111;
   color: #fff;
-  line-height: 1.6;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
 }
 
 .container {
-  max-width: 900px;
+  padding: 40px 20px;
+  max-width: 800px;
   margin: auto;
-  background: #2d2d44;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-  animation: fadeIn 1s ease-in-out;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-header img {
-  width: 140px;
-  height: 140px;
+.profile {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  border: 4px solid #4fc3f7;
-  margin-bottom: 10px;
-  transition: transform 0.4s ease;
-}
-
-header img:hover {
-  transform: scale(1.05);
+  border: 3px solid #fff;
+  box-shadow: 0 0 15px #00f7ff;
 }
 
 h1 {
   font-size: 2.5rem;
-  color: #4fc3f7;
+  margin-top: 20px;
+  color: #fff;
 }
 
 h2 {
-  margin-top: 30px;
-  color: #81d4fa;
-  font-size: 1.8rem;
-  border-bottom: 2px solid #4fc3f7;
-  padding-bottom: 5px;
-}
-
-ul {
-  list-style-type: square;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-p, li {
-  font-size: 1.1rem;
-}
-
-footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 0.9rem;
+  font-weight: 400;
   color: #aaa;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
+.bio {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+
+.info {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.location {
+  margin: 15px 0;
+  color: #bbb;
+}
+
+.discord-box {
+  margin-top: 30px;
+  background: #222;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #5865F2;
+  box-shadow: 0 0 10px #5865F2;
+}
+
+.discord-box img {
+  width: 60px;
+  border-radius: 10px;
+}
+
+.discord-box a {
+  display: block;
+  font-size: 1.1rem;
+  color: #00aaff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.disc-legend {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 25px;
+  background: #00f7ff;
+  color: #000;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.github-btn:hover {
+  background: #00c0cc;
+}
+
+.narutinho {
+  margin-top: 30px;
+}
+
+.narutinho img {
+  width: 120px;
+  animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
