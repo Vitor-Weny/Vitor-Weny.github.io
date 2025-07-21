@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vitor Eduardo | Portfólio</title>
-  <link rel="stylesheet" href="estilo.css">
   <style>
     body {
       margin: 0;
@@ -33,46 +32,64 @@
       font-size: 1.3em;
       color: #aaa;
     }
-    .skills {
+    .bio {
       margin-top: 20px;
-      font-size: 1.1em;
+      font-size: 1.05em;
       color: #ccc;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .narutinho {
-      margin-top: 30px;
-      width: 180px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ff9900a0;
+    .links {
+      margin-top: 25px;
     }
-    .github-link {
+    .link-btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px 10px;
+      padding: 10px 20px;
+      background: #1f1f1f;
+      border: 1px solid #444;
+      border-radius: 6px;
       color: #00f2ff;
       text-decoration: none;
+      transition: 0.3s;
       font-weight: bold;
-      font-size: 1.1em;
+    }
+    .link-btn:hover {
+      background: #2c2c2c;
+      box-shadow: 0 0 10px #00f2ff80;
+    }
+    .info-local {
+      margin-top: 15px;
+      font-size: 0.95em;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <!-- ✅ FOTO JÁ EMBUTIDA -->
-    <img src="a6a79c4f-bd14-41a3-805e-75e9e2f04adb.png" alt="Foto de Vitor" class="foto-perfil">
+    <img src="a6a79c4f-bd14-41a3-805e-75e9e2f04adb.png" alt="Foto de Vitor" class="foto-perfil" />
+
     <h1>Vitor Eduardo</h1>
     <h2>Desenvolvedor Full Stack</h2>
 
-    <p class="skills">
-      Domino: <strong>Python</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, um pouco de <strong>PHP</strong><br>
-      Co-fundador da plataforma <strong>Weny</strong>.
+    <p class="bio">
+      Olá! Tenho 14 anos e sou apaixonado por programação.<br>
+      Domino <strong>Python</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>CSS</strong>, um pouco de <strong>PHP</strong> e outras linguagens.<br>
+      Sou co-fundador da plataforma <strong>Weny</strong> e enfrento qualquer desafio de programação.<br>
+      Mas... tenho medo de uma coisa: uma roleta russa de Python 🎭
     </p>
 
-    <!-- ✅ NARUTO EM GIF ANIMADO -->
-    <img src="https://media.tenor.com/jGb2ZfqPY6QAAAAC/naruto.gif" alt="Naruto acenando" class="narutinho">
+    <div class="info-local">
+      Estado: <strong>Rondônia</strong> <br>
+      Cidade: <strong>Ariquemes</strong>
+    </div>
 
-    <!-- ✅ LINK DO GITHUB -->
-    <div>
-      <a href="https://github.com/vitor-weny" target="_blank" class="github-link">🌐 Meu GitHub</a>
+    <div class="links">
+      <a href="https://github.com/vitor-weny" target="_blank" class="link-btn">🌐 Meu GitHub</a>
+      <a href="https://discord.gg/enWarCS3uA" target="_blank" class="link-btn">💬 Meu Discord</a>
     </div>
   </header>
 
