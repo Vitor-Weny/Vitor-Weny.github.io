@@ -1,80 +1,135 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vitor Eduardo | Portfólio</title>
-  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitor Eduardo - Portfólio</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
       color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    .perfil {
       text-align: center;
     }
-    header {
-      padding: 40px 20px 10px;
-    }
     .foto-perfil {
-      width: 170px;
-      height: 170px;
-      border-radius: 50%;
+      width: 160px;
+      height: 160px;
       object-fit: cover;
-      border: 3px solid #fff;
-      box-shadow: 0 0 15px #fff3;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #ffffff44;
     }
     h1 {
-      font-size: 2.2em;
-      margin: 10px 0;
+      font-size: 2.5em;
+      margin: 10px 0 0;
     }
     h2 {
-      font-size: 1.3em;
-      color: #aaa;
+      font-size: 1.4em;
+      color: #bbb;
     }
-    .skills {
-      margin-top: 20px;
+    p {
+      max-width: 800px;
+      margin: 10px auto;
       font-size: 1.1em;
-      color: #ccc;
+      line-height: 1.6;
+      color: #ddd;
     }
-    .narutinho {
-      margin-top: 30px;
-      width: 180px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ff9900a0;
-    }
-    .github-link {
-      display: inline-block;
-      margin-top: 20px;
-      color: #00f2ff;
-      text-decoration: none;
+    .info-extra {
+      margin-top: 10px;
       font-weight: bold;
-      font-size: 1.1em;
+    }
+    .animacao {
+      margin-top: 30px;
+    }
+    .animacao img {
+      width: 200px;
+      animation: aceno 1.8s infinite ease-in-out;
+    }
+    @keyframes aceno {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(8deg); }
+    }
+    .botoes {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .botao {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #1f1f1f;
+      border: 2px solid #333;
+      padding: 12px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      color: cyan;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .botao:hover {
+      background-color: #292929;
+      border-color: cyan;
+    }
+    .discord-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      background: #1a1a1a;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 1px solid #444;
+    }
+    .discord-info img {
+      width: 50px;
+      border-radius: 50%;
+    }
+    .discord-info a {
+      text-decoration: none;
+      color: #7289da;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <!-- ✅ FOTO JÁ EMBUTIDA -->
-    <img src="a6a79c4f-bd14-41a3-805e-75e9e2f04adb.png" alt="Foto de Vitor" class="foto-perfil">
+  <div class="perfil">
+    <img src="74510607-ca86-4f06-9e14-79db8474fe86.png" alt="Foto de Vitor" class="foto-perfil" />
     <h1>Vitor Eduardo</h1>
     <h2>Desenvolvedor Full Stack</h2>
-
-    <p class="skills">
-      Domino: <strong>Python</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>, um pouco de <strong>PHP</strong><br>
-      Co-fundador da plataforma <strong>Weny</strong>.
+    <p>
+      Olá, tenho 14 anos, gosto de programar, sei várias linguagens como
+      <strong>Python, Java, TypeScript, CSS, PHP</strong> e sou <strong>Full Stack</strong>.
+      Enfrento qualquer coisa, mas tenho medo só de uma coisa... <br><strong>uma roleta russa de Python 🎭</strong>
     </p>
+    <p class="info-extra">🌎 Estado: Rondônia <br> 🏙️ Cidade: Ariquemes</p>
 
-    <!-- ✅ NARUTO EM GIF ANIMADO -->
-    <img src="https://media.tenor.com/jGb2ZfqPY6QAAAAC/naruto.gif" alt="Naruto acenando" class="narutinho">
-
-    <!-- ✅ LINK DO GITHUB -->
-    <div>
-      <a href="https://github.com/vitor-weny" target="_blank" class="github-link">🌐 Meu GitHub</a>
+    <div class="discord-info">
+      <img src="81bb73ba-81ca-45b4-9c10-381af41619be.png" alt="Servidor do Discord" />
+      <div>
+        <div>Entre apenas se for para ajudar. 🙏</div>
+        <a href="https://discord.gg/enWarCS3uA" target="_blank">Junte-se ao meu servidor Discord</a>
+      </div>
     </div>
-  </header>
 
+    <div class="animacao">
+      <img src="https://media.tenor.com/-0EOWwSIwpkAAAAi/naruto-narutoooo.gif" alt="Narutinho acenando" />
+    </div>
+
+    <div class="botoes">
+      <a class="botao" href="https://github.com/seuusuarioaqui" target="_blank">
+        🌐 Meu GitHub
+      </a>
+    </div>
+  </div>
 </body>
 </html>
