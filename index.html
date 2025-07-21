@@ -1,56 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vitor Eduardo - Portfólio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="estilo.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 10px;
+    }
+    .foto {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .sobre {
+      padding: 20px;
+    }
+    .botao {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .botao:hover {
+      background-color: #2980b9;
+    }
+    .animacao {
+      margin: 40px 0;
+      font-size: 30px;
+      color: #e67e22;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <img src="https://avatars.githubusercontent.com/u/172772433?v=4" alt="Foto de Vitor Eduardo">
-      <h1>Vitor Eduardo</h1>
-      <p>Desenvolvedor Full Stack e cofundador da plataforma Weny</p>
-    </header>
+  <header>
+    <h1>Vitor Eduardo</h1>
+    <p>Desenvolvedor Full Stack</p>
+  </header>
 
-    <section>
-      <h2>Sobre mim</h2>
-      <p>Olá! Meu nome é Vitor Eduardo. Sou desenvolvedor Full Stack com experiência em diversas linguagens e tecnologias. Cofundador da plataforma Weny, tenho paixão por criar soluções inteligentes, bots automatizados e interfaces funcionais. Gosto de unir design e código para criar experiências únicas.</p>
-    </section>
+  <section class="sobre">
+    <img src="foto.png" alt="Foto de Vitor Eduardo" class="foto" />
+    <p>
+      Olá! Me chamo Vitor Eduardo, sou desenvolvedor full stack e domino
+      <strong>Python</strong>, <strong>JavaScript</strong>, <strong>TypeScript</strong>,
+      <strong>PHP</strong>, <strong>CSS</strong> e <strong>Java</strong>.
+    </p>
+    <p>
+      Sempre focado em evoluir, aprender e criar soluções criativas com tecnologia.
+    </p>
+    <a href="https://github.com/Vitor-Weny" target="_blank" class="botao">Acesse meu GitHub</a>
+  </section>
 
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li><strong>Frontend:</strong> HTML, CSS, JavaScript, TypeScript</li>
-        <li><strong>Backend:</strong> Python, PHP</li>
-        <li><strong>Outros:</strong> Criação de bots, automações, GitHub, projetos Full Stack</li>
-      </ul>
-    </section>
+  <section class="animacao">
+    <div class="narutinho">
+      🧡<br />
+      (•◡•)/<br />
+      /︶\
+      <p style="font-size:16px; margin-top: 10px;">Narutinho mandando um salve!</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>Projetos</h2>
-      <ul>
-        <li><strong>Weny-Bot:</strong> Bot profissional para Discord com moderação, diversão, sistema de boas-vindas e painel de ajuda.</li>
-        <li><strong>Portfólio pessoal:</strong> Este site com design moderno, feito com HTML, CSS e JavaScript.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Cursos</h2>
-      <ul>
-        <li>Introdução ao Frontend com HTML e CSS</li>
-        <li>JavaScript e TypeScript na prática</li>
-        <li>Automação com Python</li>
-        <li>Fundamentos de PHP</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Vitor Eduardo. Todos os direitos reservados.</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Vitor Eduardo. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
